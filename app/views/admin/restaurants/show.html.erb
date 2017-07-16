@@ -1,0 +1,9 @@
+<h3>Show Restaurant</h3>
+
+<%= image_tag(@restaurant.image) %><br>
+<%= @restaurant.name %>
+<%= simple_format(@restaurant.tel) %>
+<%= simple_format(@restaurant.address) %>
+<%= simple_format(@restaurant.description) %>
+
+<p><%= link_to 'Back to Admin Pannel', :controller => 'admin/restaurants', :action => 'index' %></p>

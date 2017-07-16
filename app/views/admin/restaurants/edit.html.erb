@@ -1,0 +1,21 @@
+<h3>Edit Restaurant</h3>
+
+
+<%= form_for @restaurant, :url => { :controller => 'admin/restaurants', :action => 'update', :id => @restaurant } do |f| %>
+  <%= f.label :name, "Name" %>
+  <%= f.text_field :name %><br>
+
+  <%= f.label :tel, "Tel" %>
+  <%= f.text_field :tel %><br>
+
+  <%= f.label :address, "Address" %>
+  <%= f.text_field :address %><br>
+
+  <%= f.label :description, "Description" %>
+  <%= f.text_area :description %><br>
+
+  <%= f.label :image, "Image Link" %>
+  <%= f.text_field :image %>
+
+    <%= f.submit "Update" %>
+<% end %>
