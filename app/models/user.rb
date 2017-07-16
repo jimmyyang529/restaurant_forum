@@ -13,4 +13,10 @@ class User < ApplicationRecord
     self.role ||= Role.find_by_name('member')
   end
 
+  def admin?
+    self.role_id == '3' # role_id == '3' 表示 admin
+  end
+
+
+
 end
